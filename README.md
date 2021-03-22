@@ -8,6 +8,7 @@
     2) React Hooks
 	3) React hook form
 	4) font Awesome
+    5) PrivetRouter
 	
 * Bootstrap
 * CSS
