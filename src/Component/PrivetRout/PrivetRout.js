@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Redirect, Route } from 'react-router';
-import { useContext } from 'react/cjs/react.development';
+
 import { UserContext } from '../../App';
 
 const PrivetRout = ({children, ...rest}) => {

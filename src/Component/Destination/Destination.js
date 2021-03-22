@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router';
+
 import data from '../../Data/data.json';
 import GoogleMaps from "simple-react-google-maps"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faUserFriends } from '@fortawesome/free-solid-svg-icons'
+import {  faUserFriends } from '@fortawesome/free-solid-svg-icons'
+import { useParams } from 'react-router';
 
 
 

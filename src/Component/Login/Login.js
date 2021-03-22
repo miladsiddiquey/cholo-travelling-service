@@ -1,16 +1,15 @@
 import firebase from "firebase/app";
 import "firebase/auth";
-
-import { useState } from 'react';
-import { useContext } from "react/cjs/react.development";
-import { UserContext } from "../../App";
-import { useHistory, useLocation } from "react-router";
-import firebaseConfig from "../../firebase.config";
+import firebaseConfig from '../../firebase.config'
+import { useContext, useState } from 'react';
+import { UserContext } from '../../App';
 import { Form } from "react-bootstrap";
+import { useHistory, useLocation } from "react-router";
+
 
 if (firebase.apps.length === 0){
 
-    firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
 }
 
 
@@ -25,6 +24,7 @@ function Login() {
     password: '',
     photo: ''
   })
+  
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const history = useHistory();

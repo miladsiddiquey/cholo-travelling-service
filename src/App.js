@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './Component/Header/Header';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -16,7 +16,6 @@ import NoMatch from './Component/NoMatch/NoMatch';
 import Login from './Component/Login/Login';
 
 import { createContext } from "react";
-import { useState } from "react/cjs/react.development";
 import PrivetRout from "./Component/PrivetRout/PrivetRout";
 
 export const UserContext = createContext();

@@ -1,29 +1,32 @@
 import React, { useContext } from 'react';
-
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+
 import { UserContext } from '../../App';
 
 const Header = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext); 
-  
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
   return (
-    <div>
-      <div className="container">
-        <div className="d-flex mt-5">
-          <div className="navbar-brand">
-            <h2>Cholo</h2>
-          </div>
-          <div className="menu navbar ml-auto">
-            <Link to="/home" className='nav-link'>Home</Link>
-            <Link to="/destination/1" className='nav-link'>Destination</Link>
-            {/* <Link to="/login" className='nav-link'>Login</Link> */}
 
-            {loggedInUser.email ? <Link to="" className="nav-link">{loggedInUser.name}</Link> : <Link to="/login" className="nav-link">Login</Link>}
+    <Container>
+      <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar.Brand className="text-dark" style={{ fontSize: '30px' }} href="#home">Cholo</Navbar.Brand>
+        <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto ">
+            <Link to="/home" className='p-3 text-dark'>Home</Link>
+            <Link to="/destination/1" className=' p-3 text-dark'>Destination</Link>
+            {/* <Link to="/login" className='text-dark'>Login</Link>  */}
+            {loggedInUser.email ? <Link to="" className="text-dark">{loggedInUser.name}</Link> : <Link to="/login" className="p-3 text-dark">Login</Link>}
 
-          </div>
-        </div>
-      </div>
-    </div>
+          </Nav>
+
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
+
   );
 };
 
