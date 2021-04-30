@@ -21,4 +21,10 @@ Features:
 * CSS
 * FakeData
 
+
+Output:
+	![assignment-8](https://user-images.githubusercontent.com/75581636/116720614-3de2e780-a9fe-11eb-8ebe-ba5c7558de90.jpg)
+
+
 ## project Live-link: https://rides-project.web.app/
+
