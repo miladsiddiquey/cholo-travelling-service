@@ -1,8 +1,15 @@
 ## Project Name: Cholo
 
-*this is rideing site
+## this is travelling service website.
 
-## Used in this project
+Features:
+
+   * User can take any travelling services
+   * Login and searching system
+   
+
+ Used Technolgies:
+ 
 * React
     1) React Router
     2) React Hooks
